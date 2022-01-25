@@ -8,16 +8,5 @@
     app:title="News"
     app:titleTextColor="@color/white">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="search"
-        android:background="@null"
-
-        android:clickable="true"
-        android:focusable="true"
-        android:layout_gravity="end"
-        android:layout_marginEnd="15dp"
-        app:srcCompat="@drawable/ic_baseline_search_24"/>
 
 </androidx.appcompat.widget.Toolbar>

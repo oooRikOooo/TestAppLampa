@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TestAppLampa</string>
+    <string name="app_name">News</string>
     <string name="name_stories">Stories</string>
     <string name="name_video">Video</string>
     <string name="name_favourites">Favourites</string>
