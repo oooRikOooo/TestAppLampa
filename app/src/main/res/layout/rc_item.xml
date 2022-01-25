@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/constraint"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:minHeight="100dp">
+
+    <!-- if do not need to stretch delete scaleType line -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:maxHeight="250dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <TextView
+        android:id="@+id/textViewTextRC"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Text Example"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewLinkRC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Link Example"
+        android:textColor="@color/blue_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTextRC"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewDateRC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:text="Date Example"
+        android:textColor="@color/grey_text"
+        app:layout_constraintStart_toEndOf="@+id/textViewLinkRC"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTextRC"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
